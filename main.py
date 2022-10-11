@@ -10,7 +10,7 @@ def changeFirstLetters(words):
     letter2 = word2[0]
     word1 = letter2 + word1[1:]
     word2 = letter1 + word2[1:]
-    return word1 + " " + word2
+return word1 + " " + word2
 
 bot = telebot.TeleBot('5519104894:AAGw3YLcJfC3uzg4UMeCnXwiWDmRUIFLkgY');
 
