@@ -6,16 +6,15 @@ CONSONANTS = "бвгджзйклмнпрстфхцчшщ"
 def checkWord(word):
     if word[1] in CONSONANTS and word[2] in CONSONANTS or
        word[1] in VOWELS and word[2] in VOWELS:
-        result = True
+        return True
     else:
-        result = False
+        return False
 
 def checkDoubledLettersType(word1,word2):
     if checkWord(word1) or checkWord(word2):
-        result = True
+        return True
     else:
-        result = False
-    return result
+        return False
     
 def changeFirstLetters(words):
     if len(words) < 2:
